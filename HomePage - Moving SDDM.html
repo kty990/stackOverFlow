@@ -1,0 +1,58 @@
+<!-- Based on https://www.armacmartin.com/ -->
+<!--
+Time taken so far: 4.5 hours
+Last Updated: 2019/02/17 -- 8:00PM
+
+  -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Website Home Page </title>
+  <link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-image .5s;
+}
+
+</style>
+
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+  setLocation();
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a src="#home"><image src="stock_logo.png" alt="no logo found" class=image_logo></image></a>
+  <a href="#home">HOME</a>
+  <button class="dropdown-btn" onclick="drop()">OUR STORY 
+    <i class="fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#about_us">ABOUT US</a>
+    <a href="#community">COMMUNITY</a>
+    <a href="#">HUMANITARIAN ACTION</a>
+  </div>
+  <a href="#products/shop">PRODUCTS</a>
+  <a href="#contact">CONTACT US</a>
+  <a href="#careers" class=seperate>CAREERS</a>
+  <a href="#apply">APPLY</a>
+</div>
+
+<div id="main">
+  <image src="stock_logo.png" alt="Error 404: Logo not found" class=logo_link>
+    <!-- MAJOR BUG: The "open nav" button starts at around left:10% -->
+  <span style="font-size:30px;cursor:pointer;color:white;top:10%;left:1%;" id=bttn1 onclick="openNav();setLocation();">&#9776; </span>
+  <span style="font-size:50px;cursor:pointer;display:none;top:10%;position:absolute;" id=bttn2 onclick="closeNav()">&times; </span>
+</div>
+
+<script src="style.js">
+</script>
+   
+</body>
+</html> 
